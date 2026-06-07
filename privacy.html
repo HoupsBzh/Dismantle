@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dismantle — Politique de confidentialité</title>
+  <meta name="description" content="Politique de confidentialité de Dismantle." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      background: #060809;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'DM Mono', monospace;
+      padding: 4rem 2rem;
+    }
+
+    .scan {
+      position: fixed;
+      inset: 0;
+      background-image: repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(255,255,255,0.011) 3px, rgba(255,255,255,0.011) 4px);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .corner { position: fixed; width: 20px; height: 20px; z-index: 1; }
+    .corner.tl { top: 1.5rem; left: 1.5rem; border-top: 1px solid #1e2a38; border-left: 1px solid #1e2a38; }
+    .corner.tr { top: 1.5rem; right: 1.5rem; border-top: 1px solid #1e2a38; border-right: 1px solid #1e2a38; }
+    .corner.bl { bottom: 1.5rem; left: 1.5rem; border-bottom: 1px solid #1e2a38; border-left: 1px solid #1e2a38; }
+    .corner.br { bottom: 1.5rem; right: 1.5rem; border-bottom: 1px solid #1e2a38; border-right: 1px solid #1e2a38; }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 640px;
+    }
+
+    .back {
+      display: inline-block;
+      font-size: 10px;
+      color: #2a3a4a;
+      letter-spacing: 0.2em;
+      text-decoration: none;
+      margin-bottom: 3rem;
+      transition: color 0.15s;
+    }
+    .back:hover { color: #8fa0b0; }
+
+    .site-title {
+      font-family: 'Oswald', sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: #e8edf2;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.4rem;
+      text-shadow: 2px 3px 0px rgba(30,60,120,0.85);
+    }
+
+    .bar1 { height: 2px; background: #1a2535; max-width: 200px; margin-bottom: 3px; }
+    .bar2 { height: 1px; background: #111820; max-width: 200px; margin-bottom: 3rem; }
+
+    h1 {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      font-weight: 500;
+      color: #3a5060;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .date {
+      font-size: 10px;
+      color: #1e2a38;
+      letter-spacing: 0.15em;
+      margin-bottom: 3rem;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      font-weight: 500;
+      color: #8fa0b0;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #1a2535;
+    }
+
+    p {
+      font-size: 13px;
+      color: #3a5060;
+      line-height: 1.9;
+      letter-spacing: 0.03em;
+    }
+
+    ul {
+      list-style: none;
+      margin-top: 0.8rem;
+    }
+
+    ul li {
+      font-size: 13px;
+      color: #3a5060;
+      line-height: 1.9;
+      letter-spacing: 0.03em;
+      padding-left: 1.2rem;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: #1e2a38;
+    }
+
+    a {
+      color: #8fa0b0;
+      text-decoration: none;
+    }
+    a:hover { color: #e8edf2; }
+
+    .footer {
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #1a2535;
+      font-size: 10px;
+      color: #1e2a38;
+      letter-spacing: 0.2em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="scan"></div>
+  <div class="corner tl"></div>
+  <div class="corner tr"></div>
+  <div class="corner bl"></div>
+  <div class="corner br"></div>
+
+  <div class="content">
+    <a href="/" class="back">← DISMANTLE</a>
+
+    <div class="site-title">DISMANTLE</div>
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+
+    <h1>Politique de confidentialité</h1>
+    <p class="date">— Dernière mise à jour : juin 2026 —</p>
+
+    <section>
+      <h2>Qui sommes-nous</h2>
+      <p>Dismantle est un service en cours de développement, accessible à l'adresse <a href="https://dismantle.fr">dismantle.fr</a>. Responsable du traitement : Houps — contact : <a href="mailto:contact@dismantle.fr">contact@dismantle.fr</a></p>
+    </section>
+
+    <section>
+      <h2>Données collectées</h2>
+      <p>Dans le cadre de la liste d'attente, nous collectons uniquement votre adresse email. Aucune autre donnée personnelle n'est collectée à ce stade.</p>
+    </section>
+
+    <section>
+      <h2>Pourquoi nous collectons ces données</h2>
+      <p>Votre email est collecté dans le but unique de vous informer du lancement de Dismantle. Il ne sera pas utilisé à d'autres fins sans votre consentement explicite.</p>
+    </section>
+
+    <section>
+      <h2>Où sont stockées vos données</h2>
+      <p>Les adresses email sont stockées dans un tableur sécurisé (Google Sheets), hébergé par Google LLC. Google agit en tant que sous-traitant et est soumis au RGPD via les clauses contractuelles types de l'Union européenne.</p>
+    </section>
+
+    <section>
+      <h2>Durée de conservation</h2>
+      <p>Vos données sont conservées jusqu'au lancement du service, ou jusqu'à ce que vous demandiez leur suppression. Au lancement, une nouvelle politique de confidentialité sera publiée et vous en serez informé(e).</p>
+    </section>
+
+    <section>
+      <h2>Vos droits</h2>
+      <p>Conformément au RGPD, vous disposez des droits suivants :</p>
+      <ul>
+        <li>Droit d'accès à vos données</li>
+        <li>Droit de rectification</li>
+        <li>Droit à l'effacement ("droit à l'oubli")</li>
+        <li>Droit d'opposition au traitement</li>
+      </ul>
+      <p style="margin-top:1rem;">Pour exercer ces droits, contactez-nous à <a href="mailto:contact@dismantle.fr">contact@dismantle.fr</a>. Nous répondrons dans un délai de 30 jours.</p>
+    </section>
+
+    <section>
+      <h2>Cookies</h2>
+      <p>Le site dismantle.fr n'utilise pas de cookies de traçage ou publicitaires.</p>
+    </section>
+
+    <section>
+      <h2>Modifications</h2>
+      <p>Cette politique peut être mise à jour à tout moment. La date de dernière mise à jour est indiquée en haut de ce document.</p>
+    </section>
+
+    <div class="footer">— DISMANTLE —</div>
+  </div>
+</body>
+</html>
